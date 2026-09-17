@@ -37,7 +37,3 @@ Puedes comprobar el funcionamiento probando los siguientes casos de prueba:
 
 ---
 
-
-1. Clona este repositorio en tu equipo:
-   ```bash
-   git clone [https://github.com/lizbethtg/Temperatura.git](https://github.com/lizbethtg/Temperatura.git)
