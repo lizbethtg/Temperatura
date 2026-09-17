@@ -1,10 +1,10 @@
-function solicitarYConvertirTemperatura() {
+function convertirTemperatura() {
   let entrada;
   let celsius;
 
-  // Bucle para volver a solicitar los datos hasta que sea un número válido
+  //?Bucle while para volver a solicitar los datos hasta que sea un número válido
   while (true) {
-    entrada = prompt("Ingresa la temperatura en grados Celsius:");
+    entrada = prompt("Ingresa la temperatura en grados Celsius 🌡️:");
 
     if (entrada === null) {
       console.log("Operación cancelada por el usuario.");
@@ -15,21 +15,21 @@ function solicitarYConvertirTemperatura() {
     celsius = Number(entradaLimpia);
 
     if (entradaLimpia !== "" && !isNaN(celsius)) {
-      break; // Salir si el valor es numérico
+      break; //?Salir si el valor es numérico
     }
 
-    alert("Error: El dato ingresado no es un número válido. Intenta de nuevo.");
+    alert("El dato ingresado no es un número válido. Intenta de nuevo.⚡");
   }
 
-  // Fórmulas
+  //?Fórmulas
   const fahrenheit = (celsius * 9) / 5 + 32;
   const kelvin = celsius + 273.15;
 
-  // 1. Impresión por consola exigida por el ejercicio
+  //?1. Impresión de grados Kelvin y Fahrenheit
   console.log(`Grados Kelvin: ${kelvin}`);
   console.log(`Grados Fahrenheit: ${fahrenheit}`);
 
-  // 2. Impresión estilizada por el DOM
+  
   const appDiv = document.getElementById("app");
   if (appDiv) {
     appDiv.innerHTML = `
@@ -48,5 +48,5 @@ function solicitarYConvertirTemperatura() {
   }
 }
 
-// Iniciar al cargar la página
-solicitarYConvertirTemperatura();
+//?Iniciar al cargar la página
+convertirTemperatura();
